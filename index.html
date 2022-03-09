@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- IonIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/favicons?domain=www.nasa.gov"
+      type="image/png"
+    />
+
+    <!-- Title -->
+    <title>NASA APOD - Astronomy Picture Of the Day</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader hidden">
+      <img src="rocket-final.svg" alt="Rocket Loading Animation" />
+    </div>
+
+    <!-- Page Content -->
+    <div class="container" id="container">
+      <!-- Navigation Bar -->
+      <nav class="navigation" id="navigation">
+        <ul class="nav-list">
+          <li>
+            <a href="#" onclick="updateDOM('favorites')"
+              ><ion-icon name="heart" class="heart-icon"></ion-icon
+              ><span>My Favorites</span></a
+            >
+          </li>
+          <li>|</li>
+          <li>
+            <a href="#" id="loadMore" onclick="getNASAImg()"
+              ><span>Load More</span> <ion-icon name="cloud-download"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content Cards -->
+      <div class="cards-container"></div>
+    </div>
+
+    <!-- Added To Favorites Message Box -->
+    <div class="msg-box" id="msg-box">
+      <ion-icon name="star"></ion-icon><span>Added to Favorites</span>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
