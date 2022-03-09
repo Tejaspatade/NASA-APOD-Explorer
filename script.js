@@ -129,7 +129,7 @@ function updateDOM(page) {
 
 // ------------------------------------------------
 // NASA APOD API URL
-const apiKey = config.API_Key;
+const apiKey = "BAGso5u0wubeOSMYLkQnLFi5CzWh2lH0qNrHAMoi";
 const count = "10";
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
 
