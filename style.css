@@ -216,16 +216,39 @@ strong {
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 843px) {
+  .html {
+    font-size: 50%;
+  }
+
   .container {
     width: 100%;
   }
 
   .card {
-    margin: 0 2.4rem;
+    margin: 2.4rem;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
   }
 
   .msg-box {
     right: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  .addtofavorites {
+    font-size: 1.8rem;
   }
 }
