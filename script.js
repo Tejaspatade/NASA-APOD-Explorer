@@ -1,7 +1,5 @@
 // https://api.nasa.gov/
-// https://api.nasa.gov/planetary/apod?api_key=BAGso5u0wubeOSMYLkQnLFi5CzWh2lH0qNrHAMoi
-// BAGso5u0wubeOSMYLkQnLFi5CzWh2lH0qNrHAMoi
-// Account ID: d788940a-c13a-4206-8ca5-23dd2eb01c3f
+// https://api.nasa.gov/planetary/apod?api_key=
 
 // Creating & Storing Favorites Section in Local Storage
 let favorites = {};
@@ -131,7 +129,7 @@ function updateDOM(page) {
 
 // ------------------------------------------------
 // NASA APOD API URL
-const apiKey = "BAGso5u0wubeOSMYLkQnLFi5CzWh2lH0qNrHAMoi";
+const apiKey = config.API_Key;
 const count = "10";
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
 
